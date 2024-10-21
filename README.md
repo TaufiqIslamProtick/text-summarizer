@@ -56,8 +56,8 @@ pip install transformers bert-score torch
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/amazon-review-summarization.git
-   cd amazon-review-summarization
+   git clone https://github.com/TaufiqIslamProtick/text-summarizer.git
+   cd text-summarizer
    ```
 
 2. Open the Jupyter Notebook:
