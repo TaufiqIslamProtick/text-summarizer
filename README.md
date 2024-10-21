@@ -47,15 +47,9 @@ pip install transformers bert-score torch
 
 ```
 .
-├── data/
-│   └── amazon_reviews.json     # Contains the original 1000 Amazon product reviews
-├── models/
-│   └── summarize.py            # Script for generating summaries using BART, PEGASUS, and T5
-├── evaluation/
-│   └── bertscore_evaluation.py  # Script for calculating BERTScore on the summaries
+├── source.ipynb               # Jupyter Notebook containing the code for summarization and evaluation
 ├── README.md                   # Project description and instructions (this file)
-└── results/
-    └── summary_results.json     # Generated summaries for all reviews
+
 ```
 
 ## How to Run
@@ -66,19 +60,15 @@ pip install transformers bert-score torch
    cd amazon-review-summarization
    ```
 
-2. Summarize the reviews using the pretrained models:
+2. Open the Jupyter Notebook:
    ```bash
-   python models/summarize.py --model bart
-   python models/summarize.py --model pegasus
-   python models/summarize.py --model t5
+   jupyter notebook source.ipynb
    ```
 
-3. Evaluate the summaries using BERTScore:
-   ```bash
-   python evaluation/bertscore_evaluation.py
-   ```
+3. Run the cells in the notebook to summarize the reviews using the pretrained models and evaluate the summaries.
 
-4. View the results in `results/summary_results.json` and the BERTScore comparison in the console output.
+4. View the results in the output of the notebook.
+
 
 ## Conclusion
 
